@@ -1,0 +1,11 @@
+Compute x^n
+Binary exponentiation.
+find x^n without running a loop n times. 
+if a number is N in decimal -> it's binary form has log2base(n)+1 digits.
+e.g. n=8 its binary form is 1000
+so log2base(8)+1 = 3+1=4
+steps:
+1. first conver the power into binary form.
+2. we will associate power with each binary digits x^1,x^2,x^4,x^8,x^16.......x^2n here x is the value we are given to find power of n.
+3. ignore power values when the binary digit is 0 only multiply 1s
+4. then multiply all the nonzero digit's powers

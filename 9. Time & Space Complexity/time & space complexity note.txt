@@ -1,0 +1,39 @@
+# linear time complexity: as the number of inputs increases the number of operation in creases. This type of time complexities are known as linear time complexity O(n).
+
+# Time complexity doesn't indicate actual time it indicates the behaviour how our algorithm is working.
+
+# when we talk about time complexity we talk about worst case scenario . 
+
+# if f(n) = 5n^2 + 3n + 6 for time complexities we will not consider constants e.g.(5,3,6)
+f(n)=>n^2 + n +1 now we will consider only the larger variable n^2
+so time complexity of the above function is O(n^2).
+
+# worst case --> Big O, average case --> Theta, best case --> Omega .
+#  big O is upper bound and Omega is Lower bound.
+
+# in terms of  space complexity we do not consider space taken by an input we only consider auxiliary space. 
+
+suppose we have an array of n size and we want to find its square of each element which will be stored inside another array. SO the first array is taking space n for this reason the new array where the sequared values of old array will be stored will take n space as well. This new array's space will be known as auxiliary space.
+As input space increases the auxiliary space will increase as well. 
+
+# if we are asked to find summ of array elements then our space complexity will be O(1) constant time complexity because while calculating the sum no extra space is needed.
+
+# time complexities -- O(1) < O(log n) < O(root(n)) < O(n) < O(n log n) < O(n^2) < O(n^3) < O(2^n)(usually this type of time complexities are seen in recursions) < O(n!)
+
+# O(1) -> when we do not need any loop or recursion then in this scenario we will have O(1) time complexity.
+
+# O(n^2) -> nested loop's time complexity.
+
+# O(log n) -> Binary Search, Binary search tree.  when in any algorithm the value is decreasing in n/2,n/4,n/8 ......1(become half in each level) in this manner then these algorithms will be considered as O(log n) complexity algorithms. 
+
+#O(root(n)) -> Prime number 
+# O(N) -> linear search, merge step in merge sort
+#O(n^2) -> selection sort, bubble sort, 
+# O(n log n) -> merge sort, quick sort's average case. 
+# O(2^n) --> recursion(Bruteforce), Find Factorial, Fibonacchi  (O(1.618)^n) (recursion although not creating new variables but an extra stack is being used inside memory for this reason recursion's approach takes more space than normal approach)
+Recursion's space complexity = Height of call stack * memory in each call(O(n)). 
+# O(n!) --> N Queens, Kinght's Tows. 
+finding all possible permutations of a string chars takes n! time complexity.
+
+# Time complexity = Total calls * work done in each call. 
+# Merge sort's space complexity O(Log n + n)=> O(log n)
