@@ -13,4 +13,16 @@ int main(){
     float *ptr2 = &price;
     cout << &price << endl;
     cout << ptr2 << endl;
+
+    // dereference operator gives us value at a certain address
+    cout << *(&price) << endl;
+    cout << *ptr2 << endl;
+
+    int j = 19;
+    int *p = &j;
+    int **parentOfP = &p;
+    cout << j <<","<<p<< endl;
+    cout << &j << "," << *p << endl;
+    cout << &p << "," << *parentOfP << endl;
+    cout << **parentOfP << endl;
 }
