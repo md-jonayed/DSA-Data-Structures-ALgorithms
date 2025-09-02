@@ -18,3 +18,5 @@ int main(){
     }
     cout << endl;
 }
+
+// time complexity of insertion sort is : O(n^2)
